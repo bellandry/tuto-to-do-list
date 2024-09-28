@@ -4,7 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style></style>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      ol {
+        padding: 10px;
+      }
+      .tasks {
+        max-width: 600px;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(199, 199, 199);
+        margin: 5px;
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+
+      #addTaskBtn {
+        background-color: green;
+        border: 1px solid green;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .delete-btn {
+        background-color: rgb(205, 58, 58);
+        border: 1px solid red;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #addTaskBtn:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+      }
+      .delete-btn:hover {
+        background-color: white;
+        border: 1px solid red;
+        color: rgb(200, 53, 53);
+      }
+    </style>
   </head>
   <body>
     <!-- le titre de la page -->
@@ -14,7 +66,9 @@
     <!-- Bouton de validation-->
     <button id="addTaskBtn">Ajouter</button>
     <!-- liste des taches-->
-    <ol id="taskList"></ol>
+    <div class="tasks">
+      <ol id="taskList"></ol>
+    </div>
 
     <script src="scripts.js"></script>
   </body>
